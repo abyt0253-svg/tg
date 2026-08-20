@@ -1,0 +1,25 @@
+/* Адаптивность для телефонов */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Делаем контейнеры на всю ширину экрана */
+  .auth-container, 
+  .chat-container {
+    width: 100% !important;
+    height: 100vh !important;
+    max-width: 100% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+  }
+
+  /* Поля ввода и кнопки делаем удобными для нажатия пальцем */
+  input, button {
+    font-size: 16px !important; /* На iOS не будет зума при клике на инпут */
+    padding: 12px !important;
+  }
+}
